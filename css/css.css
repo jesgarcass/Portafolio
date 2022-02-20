@@ -1,0 +1,62 @@
+.encabezado{
+    text-align: center;
+    width: 100%;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.principio{
+    width: 10%;
+    height: 10%;
+}
+
+img{
+    position: relative;
+    border-radius: 100%;
+    height: 20%;
+    width: 20%;
+}
+
+main{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.presentacion{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.identificacion{
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+
+.descripcion{
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+
+footer{
+    text-align: center;
+}
+
+.pie{
+    height: 3%;
+    width: 3%;
+}
