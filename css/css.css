@@ -5,27 +5,49 @@
 
 nav li{
     display: inline;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 5%;
 }
 
 nav a{
     text-transform: uppercase;
     color: black;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 130%;
     text-decoration: none;
 }
 
-.principio{
-    width: 10%;
-    height: 10%;
+a:hover{
+    text-decoration: underline;
+    color: red;
 }
 
-img{
+.principio{
+    width: 15%;
+    height: 15%;
+}
+
+.foto{
     position: relative;
     border-radius: 100%;
     height: 20%;
     width: 20%;
+    margin: 1%;
+}
+
+.skills{
+    text-align: center;
+    height: 100%;
+    margin: 20%;
+}
+
+.html{
+    height: 10%;
+    width: 10%;
+}
+
+.css{
+    height: 11%;
+    width: 11%;
 }
 
 main{
@@ -35,15 +57,25 @@ main{
 }
 
 .presentacion{
-    vertical-align: 20px;
+    vertical-align: 10%;
     width: 100%;
     position: relative;
-    margin: 0 auto;
+    margin: 2% auto;
     text-align: center;
 }
 
-.presetacion2{
+.presetacion2, .identificacion, .descripcion{
     position: relative;
+    font-size: 130%;
+    font-weight: bolt;
+}
+
+.iconos a{
+    margin: 5%;
+}
+
+.fa-linkedin-square:hover{
+    color:#0177B5;
 }
 
 footer{
@@ -54,3 +86,79 @@ footer{
     height: 3%;
     width: 3%;
 }
+
+#proyectos{
+    margin: 5%;
+}
+
+.encriptador{
+    margin: 10%;
+}
+
+#form {
+    position: relative;
+    width: 500px;
+    margin: 0px auto 50px auto;
+  }
+  
+  input {
+    font-family: cursive;
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+  }
+  
+  textarea {
+    position: relative;
+    width: 470px;
+    max-width: 470px;
+    min-width: 469px;
+    height: 110px;
+    max-height: 110px;
+    min-height: 109px;
+    padding: 15px;
+    color: black;
+    font-family: cursive;
+    font-size: 0.875em;
+    box-shadow: blue 2px 2px;
+  }
+  
+  #btn1 {
+      left: 50%;
+      width: 50.5%;
+      padding: 0;
+      margin: 4px 0px 0px 0px;
+      font-family: cursive;
+      font-size: 0.875em;
+      color: black;
+      border: solid 2px black;
+      border-radius: 50px 50px 50px 50px;
+    }
+  
+  #btn2 {
+    position: absolute;
+    left: 50%;
+    width: 50.5%;
+    padding: 0;
+    margin: 4px 0px 0px 4px;
+    font-family: cursive;
+    font-size: 0.875em;
+    color: black;
+    border: solid 2px black;
+    border-radius: 50px 50px 50px 50px;
+  }
+  
+  #btnCopy {
+      width: 502px;
+      padding: 0;
+      margin: 5px 0px 0px 0px;
+      font-family: cursive;
+      font-size: 0.875em;
+      color: black;
+      border: solid 2px black;
+      border-radius: 50px 50px 50px 50px;
+      box-shadow: 0 1px 0 black;
+      bottom: -4;
+  }
+  

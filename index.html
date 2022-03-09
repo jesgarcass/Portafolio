@@ -13,8 +13,8 @@
             <h1><img class="principio" src="imagenes/craneo.jpg"></h1>
             <nav>
                 <ul>
-                    <li><a href="">Sobre mi</a></li>
-                    <li><a href="">Skills</a></li>
+                    <li><a href="#sobre-mi">Sobre mi</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="">Hobbies</a></li>
                     <li><a href="">Formacion</a></li>
                     <li><a href="">Proyectos</a></li>
@@ -25,11 +25,60 @@
     </header>
 
     <main>
-        <div class="presentacion">
+        <section class="presentacion">
             <h1><img class="foto" src="imagenes/foto.jpg"></h1>
             <div class="presentacion2">
-                <p class="identificacion">Mi nombre es Jesus Garcia</p>
-                <p class="descripcion">Estoy siendo formado por Alura Latam</p>
+                <p class="identificacion">Mi nombre es Jesus Garcia<br> estudiante de 6to. semestre de ingenieria en sistemas en la Universidad Mariano Galvez de Guatemala</p>
+                <p class="descripcion">Estoy siendo formado como full stack por el grupo de profesionales dedicados a la ensenanza en la 
+                escuela de aprendizaje de Alura Latam Alura es el brazo online de Caelum, una reconocida escuela de tecnología e innovación en Brasil. 
+                Los fundadores, Paulo Silveira y Guilherme Silveira. Fue así que la plataforma online nació en 2011 y, con el éxito 
+                del proyecto, se creo la marca Alura en junio de 2013.</p>
+                <a href="https://www.linkedin.com/in/jesus-garcia-casta%C3%B1eda-0247a4227/">Linked ⬈</a>
+                <a href="https://github.com/masacrejesus">Github ⬈</a>
+                <a href="https://m.facebook.com/jesus.garcia.94801116">Facebook ⬈</a>
+
+            </div>
+        </section>
+        <section id="sobre-mi">
+        </section>
+        <section id="skills" class="skills"><center>
+            <h1>SKILLS</h1>
+            <img class="html" src="imagenes/html-5.png">
+            <img class="css" src="imagenes/css3.jpg">
+            <img class="css" src="imagenes/git.png">
+            <img class="html" src="imagenes/js.jpg"></center>
+        </section>
+        <div id="Hobbies">
+
+        </div>
+        <div id="Formacion">
+
+        </div>
+        <div id="proyectos">
+            <div class="encriptador">
+                <center><header>ENCRIPTADOR</header></center>
+                <P></p>
+                <form id="form" class="topBefore">
+            
+                <textarea id="texto-encriptar" type="text" placeholder="Escribe el texto a encriptar."></textarea>
+                <input id="btn1" type="submit" value="ENCRIPTAR">
+                <input id="btn2" type="submit" value="DESCIFRAR">
+            
+                </form>
+            
+                <form id="form" class="topBefore">
+                    <textarea id="txtEncript" type="text" placeholder="Aquí aparecerá tu mensaje encriptado."></textarea>
+                    <input id="btnCopy" type="submit" value="COPIAR">      
+               </form>
+            </div>
+            <div class="ahorcado">
+                <div id="vidas"> </div>
+                <div id="control"> </div>
+                <center>
+                    <canvas id="canvas1" height="750px" width="1200px"> 
+                    </canvas>
+                </center>
+                <div id="con"></div>
             </div>
         </div>
     </main>
