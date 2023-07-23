@@ -1,6 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background:no-repeat url(../imagenes/fondo.gif);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .encabezado{
     text-align: center;
     width: 100%;
+    margin: 0.5%;
+    font-size: 10px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2A394F;
+    z-index: 999;
 }
 
 nav li{
@@ -10,7 +34,7 @@ nav li{
 
 nav a{
     text-transform: uppercase;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 130%;
     text-decoration: none;
@@ -18,12 +42,12 @@ nav a{
 
 a:hover{
     text-decoration: underline;
-    color: red;
+    color: black;
 }
 
 .principio{
-    width: 15%;
-    height: 15%;
+    width: 4%;
+    height: 4%;
 }
 
 .foto{
@@ -34,14 +58,105 @@ a:hover{
     margin: 1%;
 }
 
-.skills{
-    text-align: center;
+.skills h1{
+    font-size: 200%;
+    color: white;
     height: 100%;
-    margin: 20%;
+    margin: 0 10%;
+    text-align: center;
+}
+
+.cards{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% auto;
+    width: 80%;
+}
+
+.card{
+    margin: 2% auto;
+    position: relative;
+    width: 150px;
+    height: 200px;
+}
+
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front{
+    background: rgb(9, 41, 21);
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img{
+    position: absolute;
+    width: 95%;
+    height: 90%;
+}
+
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgb(0,0,0,.4);
+    text-align: center;
+}
+
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3,35,54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    font-size: 70%;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a{
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
 }
 
 .html{
     height: 10%;
+    margin: 3%;
     width: 10%;
 }
 
@@ -53,21 +168,36 @@ a:hover{
 main{
     width: 100%;
     position: relative;
-    margin: 0 auto;
+    margin: 10% auto 2%;
 }
 
-.presentacion{
-    vertical-align: 10%;
-    width: 100%;
-    position: relative;
-    margin: 2% auto;
+.container {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
     text-align: center;
+    width: 40%;
+    margin: 10% auto 1%;
+    padding: 1%;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background: linear-gradient(
+        90deg,
+        rgb(40, 117, 68)25%,
+        rgb(38, 152, 127)73%
+    );
 }
 
-.presetacion2, .identificacion, .descripcion{
-    position: relative;
-    font-size: 130%;
-    font-weight: bolt;
+.links a{
+    font-size: 20px;
+    color: rgb(3, 52, 17);
+}
+
+.links a:hover{
+    color:white;
 }
 
 .iconos a{
@@ -79,6 +209,9 @@ main{
 }
 
 footer{
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
     text-align: center;
 }
 

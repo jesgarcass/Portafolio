@@ -25,19 +25,32 @@
     </header>
 
     <main>
-        <div class="container">
-        <section class="presentacion" style="align-content: center;">
-                <h1><img class="foto" src="imagenes/foto.png"></h1>
-                    <p class="identificacion">Mi nombre es Jesus Garcia<br> <br> Estudiante de 9no. semestre de ingenieria en sistemas en la Universidad Mariano Galvez de Guatemala</p><br> 
-                    <p class="descripcion">Soy una persona con muchos deseos de aprender y superarse tengo certificados de diferentes lenguajes como lo es sql server, javascript, asi mismo cuento con conocimientos en css, boostrap, php, java, c++, c#, html, mysql, visual basic, github y docker.</p><br>
-                    <div class="links">
-                        <a href="https://www.linkedin.com/in/jesus-garcia-casta%C3%B1eda-0247a4227/">Linked ⬈</a>
-                        <a href="https://github.com/jesgarcass">Github ⬈</a>
-                        <a href="https://m.facebook.com/jesus.garcia.94801116">Facebook ⬈</a><br>
-                    </div>
-                </div>
+        <div id="proyectos">
+            <div class="encriptador">
+                <P></p>
+                <form id="form" class="topBefore">
             
-        </section>
+                <textarea id="texto-encriptar" type="text" placeholder="Escribe el texto a encriptar."></textarea>
+                <input id="btn1" type="submit" value="ENCRIPTAR">
+                <input id="btn2" type="submit" value="DESCIFRAR">
+            
+                </form>
+            
+                <form id="form" class="topBefore">
+                    <textarea id="txtEncript" type="text" placeholder="Aquí aparecerá tu mensaje encriptado."></textarea>
+                    <input id="btnCopy" type="submit" value="COPIAR">      
+               </form>
+            </div>
+            <div class="ahorcado">
+                <div id="vidas"> </div>
+                <div id="control"> </div>
+                <center>
+                    <canvas id="canvas1" height="750px" width="1200px"> 
+                    </canvas>
+                </center>
+                <div id="con"></div>
+            </div>
+        </div>
     </main>
 
     <footer>
